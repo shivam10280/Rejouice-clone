@@ -1,0 +1,260 @@
+@font-face{
+  font-family: nb;
+  src: url(./NBInternationalProBoo.ttf);
+}
+@font-face{
+  font-family: rejoy;
+  src: url(./Rejouice-Headline.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#loader{
+  top:0;
+  position: fixed;
+  height:100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background-color: #000000;
+  color:#fff;
+  z-index: 19;
+  gap:10px;
+}
+#loader h3{
+  font-family: nb;
+  font-size: 2.5vw;
+}
+.swiper-wrapper{
+  margin-top: -11%;
+  z-index: 10;
+  
+}
+.swiper {
+  width: 120%;
+  height: 80%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: flex-end;
+}
+#swiperdiv{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-top:-4%;
+  margin-left: -2%;
+}
+.swiper-slide img {
+  display: block;
+  width: 18%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+#page4 video{
+  height: 100%;
+}
+#page5{
+  height: 100vh;
+  width: 100%;
+  /* background-color: pink; */
+  padding: 4vw 0;
+  position: relative;
+}
+#page5 h1{
+  font-family: rejoy;
+  font-size: 9vw;
+  font-weight: 90;
+  border-bottom: 1px solid black;
+  /* background-color: red;/ */
+  width: 96%;
+  margin-left: 2%;
+}
+#page4{
+  height: 100vh;
+  width: 100%;
+  background-color: #e9eadc;
+  /* background-color: black; */
+  font-family: nb;
+  font-size: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page4 svg{
+  position: absolute;
+  height: 60vh;
+}
+#page3-top-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 15vw;
+}
+#page3-elem{
+  height:100vh ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  width: 95%;
+  margin-top: -3vw; 
+}
+#page3-elem .box{
+  height: 83vh;
+  width: 32.5%;
+  position: relative;
+}
+#page3-elem .box video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#page3-elem .box img{
+  width: 101%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;  
+  transition: all linear 1s;
+}
+#page3-elem .box:hover img{
+  opacity: 0;
+}
+#page3{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #e9eadc;
+  position: relative;
+  padding: 3vw;
+  font-family: nb;
+}
+#page3-top{
+  text-align: center;  
+}
+#page3-top h4{
+ 
+  font-size: 1.2vw;
+  font-weight: 500;
+  display: inline;
+  align-items: center;
+}
+#page3-top h2{
+  font-size: 5vw;
+  font-weight: 500;
+  margin-top: 10px;
+}
+#page3-top span{  
+  background-color: black;
+  color: white;
+  font-size:0.8vw;
+  margin-left: 2px;
+  border-radius: 12px;
+  padding: 5px 10px;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+#page2{
+  width: 100%;
+  height: 100vh;
+  background-color: #e9eadc;
+  position: relative;
+}
+#nav-page2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6vw 3vw 2vw 2.5vw;
+  background-color: #e9eadc;
+  font-size: 1.65vw;
+  font-weight: 0.5vw; 
+  font-family: nb;
+}
+.paragraph{
+  padding: 1vw 5vw;
+  font-family: nb;
+  font-weight: 100px;
+  font-size: 56px; 
+  line-height: 60px;
+  /* font-weight: 0.5vw; */
+}
+#page1{
+  height: 100vh;
+  width: 100%;
+  background-color: #e9eadc;
+  position: relative;
+}
+#page1 video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+#page1-content{
+  width: 100%;
+  height: 100%; 
+  position: relative;
+  /* opacity: 0.5; */
+  z-index: 10; /* for iske piche blaack page chupa hua ha usko piche rakhen ke liye */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-bottom:5vw ; */
+  margin-right: 10px;
+
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 92%;
+  scrollbar-width: 70%;
+  padding: 2.5vw 3vw;
+  }
+#cursor{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FF5F38;
+  position: fixed;
+  z-index: 9; /* for cursor ko text ke niche lane ke liye*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   transform: translate(-50%,-50%); /*for cursor ko middle ma lane ke liye */
+}
+#cursor h5{
+  font-family: nb;
+  font-size: 1.5vw;
+}
+nav h3,h4{
+  font-size: 1.4vw;
+  font-weight: 110;
+  font-family: nb;
+}
+#page1-content h1{
+  font-size: 27vw;
+  font-weight:120;
+  line-height: 21vw;
+  padding-bottom: 4vw;
+  font-family: rejoy;
+}
+
